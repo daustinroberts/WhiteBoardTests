@@ -5,13 +5,48 @@
     <title></title>
   </head>
   <body>
+    <div>Prob 1 Flip and reverse text
+    </div>
     <div id="str">
-      Thes output should go here
+      Flip and reverse ends up here
     </div>
     <input id="userInput" type="text">
-  </input>
+    </input>
+
     <button onclick="strFunction()">click
     </button>
+    <div>The Facotrial of <span id="YourNumber">your number is:</span>
+      <div id="FactOutput">Click and find out
+      </div>
+    </div>
+
+    <input id="FactInput" type="text">
+    </input>
+
+    <button onclick="factorialFunction();document.getElementById('FactInput').value =''">Factorial Calculation
+    </button>
+
+    <div>Testing Reverse function
+    </div>
+    <input id="reverseTestInput" type="text">
+    <div id="reverseTest">
+    Reversed text will be here
+    </div>
+
+    <button onclick="reverseFunction()">Click to log reverse in console
+    </button>
+    <div> This calculates a perfect square of <span id="PerfectSquareNumber"></span>
+    </div>
+
+    <input id="PerfectSquarInput" type="text">
+    </input>
+
+    <div id="PerfectSquare">
+    </div>
+    <button onclick="PerfectSquareFunction()">
+    </button>
+
+
 
   </body>
 </html>

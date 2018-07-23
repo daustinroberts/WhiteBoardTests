@@ -1,8 +1,49 @@
 
+var strInput;
+var reverseInput;
+var reverseOutput;
+var FactInput;
+var FactOutput
+
 function strFunction() {
-  var input ="";
-  input=document.getElementById("userInput").innerHTML.value;
-  console.log(input)
-  var newStr = input.split(" ").reverse();
-  document.getElementById("str").innerHTML = newStr;
+  strInput=document.getElementById("userInput").value;
+  strOutput=reverseFunction(strInput);
+  console.log(strOutput);
+  // document.getElementById("str").innerHTML = input.split(" ").reverse();
+  // console.log(input);
+  // document.getElementById("str").innerHTML = reverseFunction(input);
+  // console.log(reverseFunction("reverse me"));
+
+}
+function simpleReverseFunction(){
+  var input
+}
+function reverseFunction(reverseInput) {
+  var reverseInput= document.getElementById("reverseTestInput").value;
+  var reverseOutput=reverseInput.split(" ");
+  var tempArray=[];
+    for(i=reverseOutput.length-1; i>=0; i--){
+      tempArray.push(reverseOutput[i]);
+    }
+  reverseOutput=tempArray;
+  document.getElementById("reverseTest").innerHTML = reverseOutput;
+  return reverseOutput;
+}
+
+function factorialFunction() {
+  FactInput=parseInt(document.getElementById("FactInput").value);
+  document.getElementById("YourNumber").innerHTML = FactInput;
+  if(FactInput >=1 && FactInput <= 18){
+    FactOutput=1;
+    for(var i=FactInput; i>=1; i--){
+      FactOutput=FactOutput*(i);
+    }
+  } else {
+    alert("Enter a number between 1 and 18");
+  }
+  document.getElementById("FactOutput").innerHTML = FactOutput;
+}
+
+function PerfectSquareFunction(){
+  
 }
