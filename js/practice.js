@@ -3,7 +3,9 @@ var strInput;
 var reverseInput;
 var reverseOutput;
 var FactInput;
-var FactOutput
+var FactOutput;
+var PerfInput;
+var PerfOutput="some output";
 
 function strFunction() {
   strInput=document.getElementById("userInput").value;
@@ -45,5 +47,15 @@ function factorialFunction() {
 }
 
 function PerfectSquareFunction(){
-  
+  PerfInput = parseInt(document.getElementById("PerfectSquareInput").value);
+  if(PerfInput==0){
+    document.getElementById("hide").innerHTML = "You can't use 0";
+    var hide = document.getElementById("SquareFactor");
+    hide.style.display="none";
+  } else {
+    // for(){}
+  }
+  // for(i=PerfInput; i>0)
+  document.getElementById("SquareFactor").innerHTML = PerfOutput;
+
 }

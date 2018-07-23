@@ -2,23 +2,24 @@
 <html>
   <head>
     <script src="js/practice.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
     <title></title>
   </head>
   <body>
-    <div>Prob 1 Flip and reverse text
-    </div>
+    <p>Prob 1 Flip and reverse text
+    </p>
     <div id="str">
       Flip and reverse ends up here
-    </div>
+    </div><br>
     <input id="userInput" type="text">
     </input>
 
     <button onclick="strFunction()">click
     </button>
-    <div>The Facotrial of <span id="YourNumber">your number is:</span>
-      <div id="FactOutput">Click and find out
-      </div>
-    </div>
+    <p>The Facotrial of <span id="YourNumber">your number is:</span>
+    </p>
+    <div id="FactOutput">Click and find out
+    </div><br>
 
     <input id="FactInput" type="text">
     </input>
@@ -26,24 +27,30 @@
     <button onclick="factorialFunction();document.getElementById('FactInput').value =''">Factorial Calculation
     </button>
 
-    <div>Testing Reverse function
-    </div>
+    <p>Testing Reverse function
+    </p>
     <input id="reverseTestInput" type="text">
-    <div id="reverseTest">
+    </input><br>
+
+    <p id="reverseTest">
     Reversed text will be here
-    </div>
+  </p><br>
 
     <button onclick="reverseFunction()">Click to log reverse in console
     </button>
-    <div> This calculates a perfect square of <span id="PerfectSquareNumber"></span>
-    </div>
+    <p> Is there a perfect Square? <span id="isSquare"></span>
+    </p>
+    <!-- will hide if not a perfect square -->
 
-    <input id="PerfectSquarInput" type="text">
+    <p>Enter a number to check if it has a square</p>
+    <input id="PerfectSquareInput" type="text">
     </input>
+    <p id="hide"> The perfect square is: <span id="SquareFactor"></span>
+    </p>
 
-    <div id="PerfectSquare">
-    </div>
-    <button onclick="PerfectSquareFunction()">
+    <p id="SquareFactor">
+    </p>
+    <button onclick="PerfectSquareFunction()">Find the perfect square
     </button>
 
 
